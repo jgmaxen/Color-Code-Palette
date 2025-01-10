@@ -1,4 +1,3 @@
-/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@
     --button: rgb(84, 58, 20);
 }
 
-/* Heading */
+/* HEADING */
 header {
     display: flex;
     align-items: center;
@@ -22,12 +21,11 @@ header {
     background-color: var(--primary);
 }
 
-/* Main */
+/* MAIN */
 main {
     background-color: var(--secondary);
 }
 
-/* Box Containers */
 .rgb-boxes {
     display: flex;
     align-items: center;
@@ -49,33 +47,80 @@ main {
     justify-content: center;
 }
 
-.red-box h2, .green-box h2, .blue-box h2 {
+/* Styles for Red Box */
+.red-box {
+    background-color: rgba(255, 0, 0, 0.858);
+}
+
+.red-box h2 {
     font-weight: 700;
     color: black;
 }
 
-.red-box label, .green-box label, .blue-box label {
+.red-box p {
     color: black;
     font-weight: 500;
 }
 
-.red-box input, .green-box input, .blue-box input {
+.red-box label {
+    color: black;
+    font-weight: 500;
+}
+
+.red-box input {
     border-radius: 5px;
     border: 2px solid black;
     text-align: center;
 }
 
-/* Red Box */
-.red-box {
-    background-color: rgba(255, 0, 0, 0.858);
-}
-
-/* Green Box */
+/* Styles for Green Box */
 .green-box {
     background-color: rgba(0, 173, 0, 0.858);
 }
 
-/* Blue Box */
+.green-box h2 {
+    font-weight: 700;
+    color: black;
+}
+
+.green-box p {
+    color: black;
+    font-weight: 500;
+}
+
+.green-box label {
+    color: black;
+    font-weight: 500;
+}
+
+.green-box input {
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Style for Blue Box */
 .blue-box {
     background-color: rgba(0, 81, 255, 0.858);
+}
+
+.blue-box h2 {
+    font-weight: 700;
+    color: black;
+}
+
+.blue-box p {
+    color: black;
+    font-weight: 500;
+}
+
+.blue-box label {
+    color: black;
+    font-weight: 500;
+}
+
+.blue-box input {
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
 }
