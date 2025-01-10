@@ -80,3 +80,17 @@ header {
 .blue-box {
     background-color: rgba(0, 81, 255, 0.858);
 }
+
+.generate-save-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.generate-save-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px 0px (0,0,0,0.5);
+    margin: 10px;
+}
