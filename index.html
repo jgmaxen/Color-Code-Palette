@@ -13,7 +13,72 @@
 </head>
 
 <body>
-    <script src="./script.js"></script>
+    <!-- Heading -->
+    <header>
+        <h1>Color Palette Generator</h1>
+    </header>
+
+    <main>
+        <!-- Container for Color Input Boxes -->
+        <section class="rgb-boxes">
+            <!-- Container for Red Box -->
+            <div class="red-box">
+                <h2>Red</h2>
+                <label for="red-value">Red Value:</label><br>
+                <input type="text" id="red-value" name="red-value" placeholder="Ex. 0-255">
+            </div>
+            <!-- Container for Green Box -->
+            <div class="green-box">
+                <h2>Green</h2>
+                <label for="green-value">Green Value:</label><br>
+                <input type="text" id="green-value" name="green-value" placeholder="Ex. 0-255">
+            </div>
+            <!-- Container for Blue Box -->
+            <div class="blue-box">
+                <h2>Blue</h2>
+                <label for="blue-value">Blue Value:</label><br>
+                <input type="text" id="blue-value" name="blue-value" placeholder="Ex. 0-255">
+            </div>
+        </section>
+
+        <!-- Container for Generate Color and Save Palette Buttons -->
+        <section class="generate-save-container">
+            <button>Generate Color</button>
+            <button>Save Palette</button>
+        </section>
+
+        <!-- Saved Colors Containers -->
+        <section class="saved-colors">
+            <!-- Saved Color Box 1 -->
+            <div class="color-1">
+                <h3>Saved Color 1</h3>
+            </div>
+            <!-- Saved Color Box 2 -->
+            <div class="color-2">
+                <h3>Saved Color 2</h3>
+            </div>
+            <!-- Saved Color Box 3 -->
+            <div class="color-3">
+                <h3>Saved Color 3</h3>
+            </div>
+            <!-- Saved Color Box 4 -->
+            <div class="color-4">
+                <h3>Saved Color 4</h3>
+            </div>
+            <!-- Saved Color Box 5 -->
+            <div class="color-5">
+                <h3>Saved Color 5</h3>
+            </div>
+
+            <!-- Clear Buttons -->
+             <button class="clear-last">Clear Last</button>
+             <button class="clear-all">Clear All</button>
+        </section>
+    </main>
+
+    <!-- Script for Bootstrap and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 
 </html>
