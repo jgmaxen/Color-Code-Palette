@@ -10,6 +10,7 @@
 body {
     background-color: var(--secondary);
     overflow: hidden;
+    color: black;
 }
 
 /* Root Styles */
@@ -52,11 +53,9 @@ header {
 
 .red-box h2, .green-box h2, .blue-box h2 {
     font-weight: 700;
-    color: black;
 }
 
 .red-box label, .green-box label, .blue-box label {
-    color: black;
     font-weight: 500;
 }
 
@@ -91,6 +90,21 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px 0px (0,0,0,0.5);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     margin: 10px;
+}
+
+.saved-colors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.color-1, .color-2, .color-3, .color-4, .color-5 {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    align-items: right;
 }
