@@ -22,7 +22,7 @@ THEN I’m able to save the new color and repeat it 5 times to make a color pale
 
 ## Wireframe
 
-
+![Wireframe](./Images/Wireframe.jpg)
 
 ## Credits
 
