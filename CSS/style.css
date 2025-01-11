@@ -1,12 +1,15 @@
+/* Universal Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", serif;
 }
+
 body {
-   background-color: var(--secondary);
+    background-color: var(--primary);
     overflow: hidden;
+    color: black;
 }
 
 /* Root Styles */
@@ -16,7 +19,7 @@ body {
     --button: rgb(84, 58, 20);
 }
 
-/* HEADING */
+/* Heading */
 header {
     display: flex;
     align-items: center;
@@ -25,26 +28,43 @@ header {
     background-color: var(--primary);
 }
 
-
+/* Main */
 .rgb-boxes {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     padding: 20px;
 }
 
 .red-box, .green-box, .blue-box {
-    border-radius: 8px;
+    border-radius: 5px;
     height: 200px;
     width: auto;
-    border: 2.5px solid black;
+    border: none;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+}
+
+.red-box h2, .green-box h2, .blue-box h2 {
+    font-weight: 700;
+}
+
+.red-box label, .green-box label, .blue-box label {
+    font-weight: 500;
+}
+
+.red-box input, .green-box input, .blue-box input {
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    margin: 10px;
 }
 
 /* Styles for Red Box */
@@ -52,51 +72,9 @@ header {
     background-color: rgba(255, 0, 0, 0.858);
 }
 
-.red-box h2 {
-    font-weight: 700;
-    color: black;
-}
-
-.red-box p {
-    color: black;
-    font-weight: 500;
-}
-
-.red-box label {
-    color: black;
-    font-weight: 500;
-}
-
-.red-box input {
-    border-radius: 5px;
-    border: 2px solid black;
-    text-align: center;
-}
-
 /* Styles for Green Box */
 .green-box {
     background-color: rgba(0, 173, 0, 0.858);
-}
-
-.green-box h2 {
-    font-weight: 700;
-    color: black;
-}
-
-.green-box p {
-    color: black;
-    font-weight: 500;
-}
-
-.green-box label {
-    color: black;
-    font-weight: 500;
-}
-
-.green-box input {
-    border-radius: 5px;
-    border: 2px solid black;
-    text-align: center;
 }
 
 /* Style for Blue Box */
@@ -124,8 +102,6 @@ header {
     border: 2px solid black;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 .generate-save-container button {
     padding: 10px 20px;
     border-radius: 5px;
@@ -133,23 +109,21 @@ header {
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     margin: 10px;
 }
-.generate-save-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
+
+/* Saved Colors */
 .saved-colors {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.color-1, .color-2, .color-3, .color-4 , .color-5 {
-    padding: 10px;
+
+.color-1, .color-2, .color-3, .color-4, .color-5 {
+    padding: 10px 20px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: none;
     margin: 10px;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     align-items:right;
 
 }
->>>>>>> 705302d1034b138d9e97fbec961a9bf1274372b9
