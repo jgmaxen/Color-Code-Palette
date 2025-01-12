@@ -117,14 +117,14 @@ header {
 }
 
 /* Empty Save Palette Container */
-.empty-save-palette-container {
+.clear-save-palette-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-#empty-last, #empty-all {
+#clear-last, #clear-all {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -140,7 +140,7 @@ header {
     margin: 10px;
 }
 
-#empty-all {
+#clear-all {
     width: 150px;
 }
 
