@@ -82,14 +82,27 @@ header {
     background-color: rgba(0, 81, 255, 0.858);
 }
 
-/* Generate & Save Buttons */
-.generate-color-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+.blue-box h2 {
+    font-weight: 700;
+    color: black;
 }
 
-.generate-color-container button {
+.blue-box p {
+    color: black;
+    font-weight: 500;
+}
+
+.blue-box label {
+    color: black;
+    font-weight: 500;
+}
+
+.blue-box input {
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+.generate-save-container button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -111,6 +124,9 @@ header {
     border: none;
     margin: 10px;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+<<<<<<< HEAD
+    align-items:right;
+=======
     align-items: right;
     background-color: white;
     height: 300px;
@@ -145,4 +161,6 @@ header {
 }
 
 /* Save Palette */
+>>>>>>> 7df533dfeb1108038a796319024e3b649821dc81
 
+}
