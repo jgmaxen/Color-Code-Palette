@@ -44,7 +44,9 @@ function generateAndSaveColor() {
       // Update counter
       currentColorIndex++;
     } else {
-      alert("All Saved Colors are filled.");
+      // Show the Bootstrap modal instead of an alert
+      const modal = new bootstrap.Modal(document.getElementById('colorModal'));
+      modal.show();
     }
     // Clear the input fields
     redColorValue.value = "";
@@ -100,7 +102,6 @@ function savePalette() {
 // Save the array to local storage
 localStorage.setItem("colorSwatches", JSON.stringify(paletteCollection));
 alert('Palette saved!');
-
 
 // Function to save an item with a custom name
 function saveItem() {
