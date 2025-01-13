@@ -8,7 +8,6 @@
 
 body {
     background-color: var(--primary);
-    overflow: hidden;
     color: black;
 }
 
@@ -28,11 +27,23 @@ header {
     background-color: var(--primary);
 }
 
+.btn-primary {
+    background-color: var(--button);
+    border: none;
+    margin: 20px;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Main */
 .rgb-boxes {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     padding: 20px;
 }
@@ -121,7 +132,7 @@ header {
     height: 300px;
 }
 
-/* Clear Save Palette Container */
+/* Empty Save Palette Container */
 .empty-save-palette-container {
     display: flex;
     align-items: center;
@@ -143,8 +154,4 @@ header {
     border: none;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     margin: 10px;
-}
-
-#empty-all {
-    width: 150px;
 }

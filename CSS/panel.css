@@ -8,7 +8,6 @@
 
 body {
     background-color: var(--primary);
-    overflow: hidden;
     color: black;
 }
 
@@ -26,6 +25,17 @@ header {
     justify-content: center;
     padding: 20px;
     background-color: var(--primary);
+}
+
+.btn-primary {
+    background-color: var(--button);
+    border: none;
+    margin: 20px;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Main */
