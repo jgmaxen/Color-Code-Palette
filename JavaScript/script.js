@@ -55,3 +55,4 @@ function generateAndSaveColor() {
 }
 // Event listener for Generate Color Button
 generateColorBtn.addEventListener("click", generateAndSaveColor);
+
