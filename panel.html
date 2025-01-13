@@ -8,7 +8,7 @@
     <a id="back" href="index.html"> ⬅ Back</a>
   </nav>
   <style>
-    body {
+    /* body {
       font-family: "Montserrat", serif;
       margin: 0;
       padding: 20px;
@@ -37,7 +37,7 @@
       border-radius: 10px;
       background-color: var(--primary); 
       min-height: 150px; /* Ensure container has height even if empty */
-    }
+    /* }
     .swatch {
       width: 100px;
       height: 100px;
@@ -59,7 +59,7 @@
       font-size: 18px;
       color: #888;
       display: none; 
-    }
+    } */ */
   </style>
 </head>
 <body>
@@ -67,36 +67,8 @@
   <div id="swatches-container">
     <div id="no-swatches">No swatches saved yet!</div>
   </div>
-  
   <script>
-    // JavaScript to load swatches from localStorage
-    const swatchesContainer = document.getElementById('swatches-container');
-    const noSwatchesMessage = document.getElementById('no-swatches');
-
-    // Retrieve swatches from localStorage
-    const savedSwatches = JSON.parse(localStorage.getItem('colorSwatches')) || [];
-
-    if (savedSwatches.length > 0) {
-      noSwatchesMessage.style.display = 'none'; // Hide the "no swatches" message
-      savedSwatches.forEach(color => {
-        const swatchDiv = document.createElement('div');
-        swatchDiv.classList.add('swatch');
-
-        const colorDiv = document.createElement('div');
-        colorDiv.classList.add('swatch-color');
-        colorDiv.style.backgroundColor = color;
-
-        swatchDiv.appendChild(colorDiv);
-        swatchesContainer.appendChild(swatchDiv);
-      });
-    } else {
-      noSwatchesMessage.style.display = 'block'; // Show the "no swatches" message
-    }
-    const storeLocalStorage = function (data) {
-  const dataArrary = readLocalStorage();
-  dataArrary.push(data);
-    localStorage.setItem('posts', JSON.stringify(dataArrary));
-}
+  
   </script>
 </body>
 </html>
