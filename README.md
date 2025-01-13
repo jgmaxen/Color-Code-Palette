@@ -2,13 +2,13 @@
 
 ## Description
 
-We want to have a website where the user can input numbers for Red, Green, and Blue to make a color. Create 3-5 of these colors to make a Palette, then save and name the palette to then display it on a separate page to use for a project.
+We want to have a website where the user can input numbers for Red, Green, and Blue to make a color. Create 5 of these colors to make a Palette, then save and name the palette to then display it on a separate page to use for a project.
 
 ## User Story
 
 As a Website Developer practicing Color Theory
 
-I want to be able to generate a specific RGB color. I want to be able to choose the amount of Red, the amount of Green, and the amount of Blue. I want to create a box of this specific color (RGB). Do this 3-5 times to create a Theme. I want to then save these Themes to Local Storage to display it to a seperate HTML page
+I want to be able to generate a specific RGB color. I want to be able to choose the amount of Red, the amount of Green, and the amount of Blue. I want to create a box of this specific color (RGB). Do this 5 times to create a Palette. I want to then save this Palette to Local Storage to display it to a seperate HTML page
 
 So that I can see different color combinations for my project
 
