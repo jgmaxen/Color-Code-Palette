@@ -47,21 +47,32 @@ h1 {
 }
 
 #swatches-container {
-    flex-direction: column;
+    flex-direction: row; /* Horizontal layout for palettes */
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    padding: 15px; 
-    border: 3px solid #030505; 
+    flex-wrap: wrap; /* Wrap palettes to new lines if needed */
+    gap: 20px; /* Add spacing between palettes */
+    justify-content: center; /* Center-align the palettes */
+    padding: 20px; /* Extra padding */
+    border: 3px solid #030505;
     border-radius: 10px;
-    background-color: var(--primary); 
+    background-color: var(--primary);
     min-height: 150px; /* Ensure container has height even if empty */
 }
 
 .swatchSection {
     display: flex;
+    flex-direction: column; /* Stack palette name and swatches */
+    align-items: center; /* Center-align content */
+    margin-bottom: 20px; /* Add spacing between palettes */
+}
+
+.swatchSection h2 {
+    font-size: 1.5rem; /* Adjust font size */
+    color: var(--button); /* Match button color */
+    text-align: center; /* Center-align text */
+    margin-bottom: 10px; /* Add spacing between name and swatches */
+    text-transform: capitalize; /* Capitalize names */
+    font-weight: bold; /* Make the name stand out */
 }
 
 .swatch {
@@ -74,6 +85,12 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth animation for hover */
+}
+
+.swatch:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
 }
 
 .swatch-color {
@@ -86,5 +103,5 @@ h1 {
     text-align: center;
     font-size: 18px;
     color: #888;
-    display: none; 
+    display: none;
 }
