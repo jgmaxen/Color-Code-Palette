@@ -1,3 +1,5 @@
+const paletteCollection = JSON.parse(localStorage.getItem("colorSwatches")) || [];
+
 // These are the inputs entered by the user for ther Red Green and Blue
 const redColorValue = document.querySelector("#red-value");
 const greenColorValue = document.querySelector("#green-value");
@@ -68,13 +70,23 @@ function emptyLast() {
       alert("No saved colors to empty.");
     }
   }
-  // Event listener for Empty Last Color Button
-  emptyLastBtn.addEventListener("click", emptyLast);
+// Event listener for Empty Last Color Button
+emptyLastBtn.addEventListener("click", emptyLast);
 
 // Function that saves the current colors to local storage
 function savePalette() {
+  // Use prompt to get the item name from the user
+  const itemName = prompt("Please enter the name for the item:", "DefaultName");
+  if (itemName) {
+    // Proceed with saving the item using the provided name
+    console.log(`The item will be saved as: ${itemName}`);
+    // Your saving logic here...
+  } else {
+    console.log("No name provided. The item will not be saved.");
+  }
   // Create an array to hold the colors
   const savedColors = [];
+  savedColors.push(itemName);
   // Loop through the saved color elements
   for (let i = 0; i < savedColorElements.length; i++) {
     // Get the background color of the element
@@ -84,10 +96,13 @@ function savePalette() {
       savedColors.push(color);
     }
   }
-  // Save the array to local storage
-  localStorage.setItem("colorSwatches", JSON.stringify(savedColors));
-  alert('Palette saved!');
-  // Function to save an item with a custom name
+  paletteCollection.push(savedColors);
+// Save the array to local storage
+localStorage.setItem("colorSwatches", JSON.stringify(paletteCollection));
+alert('Palette saved!');
+
+
+// Function to save an item with a custom name
 function saveItem() {
     // Use prompt to get the item name from the user
     const itemName = prompt("Please enter the name for the item:", "DefaultName");
@@ -100,7 +115,7 @@ function saveItem() {
     }
   }
   // Call the function to execute the prompt and save the item
-  saveItem();
+  // saveItem();
 }
 // Event listener for Save Palette Button
 savePaletteBtn.addEventListener("click", savePalette);
