@@ -37,6 +37,7 @@ h1 {
 }
 
 #swatches-container {
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -47,6 +48,10 @@ h1 {
     border-radius: 10px;
     background-color: var(--primary); 
     min-height: 150px; /* Ensure container has height even if empty */
+}
+
+.swatchSection {
+    display: flex;
 }
 
 .swatch {
