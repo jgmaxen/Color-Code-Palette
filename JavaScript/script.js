@@ -56,6 +56,21 @@ function generateAndSaveColor() {
 // Event listener for Generate Color Button
 generateColorBtn.addEventListener("click", generateAndSaveColor);
 
+// Function that empties the last saved color
+function emptyLast() {
+    // Check if there are any saved colors
+    if (currentColorIndex > 0) {
+      // Clear the last saved color
+      savedColorElements[currentColorIndex - 1].style.backgroundColor = "";
+      // Update the counter
+      currentColorIndex--;
+    } else {
+      alert("No saved colors to empty.");
+    }
+  }
+  // Event listener for Empty Last Color Button
+  emptyLastBtn.addEventListener("click", emptyLast);
+
 // Function that saves the current colors to local storage
 function savePalette() {
   // Create an array to hold the colors
@@ -89,3 +104,17 @@ function saveItem() {
 }
 // Event listener for Save Palette Button
 savePaletteBtn.addEventListener("click", savePalette);
+
+// Function that empties all saved colors
+function emptyAll() {
+    // Loop through the saved color elements
+    for (let i = 0; i < savedColorElements.length; i++) {
+      // Clear the background color of the element
+      savedColorElements[i].style.backgroundColor = "";
+    }
+    // Reset the counter
+    currentColorIndex = 0;
+  }
+  // Event listener for Empty All Colors Button
+  emptyAllBtn.addEventListener("click", emptyAll);
+  
