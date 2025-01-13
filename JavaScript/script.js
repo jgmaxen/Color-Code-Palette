@@ -6,11 +6,11 @@ const blueColorValue = document.querySelector("#blue-value");
 // This is the Generate Color Button
 const generateColorBtn = document.querySelector("#generate-color");
 // This is the Empty Last Color Button
-const clearLastBtn = document.querySelector("#clear-last");
+const emptyLastBtn = document.querySelector("#empty-last");
 // This is the Save Palette Button
 const savePaletteBtn = document.querySelector("#save-palette");
 // This is the Empty All Colors Button
-const clearAllBtn = document.querySelector("#clear-all");
+const emptyAllBtn = document.querySelector("#empty-all");
 
 // These are the boxes where the saved colors will go
 const savedColorElements = [
