@@ -129,4 +129,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-.DS_StoreColor-Code-Palette
+.DS_Store

@@ -55,6 +55,10 @@ header {
     font-weight: 700;
 }
 
+.red-box p, .green-box p, .blue-box p {
+    font-weight: 500;
+}
+
 .red-box label, .green-box label, .blue-box label {
     font-weight: 500;
 }
@@ -82,32 +86,14 @@ header {
     background-color: rgba(0, 81, 255, 0.858);
 }
 
-.blue-box h2 {
-    font-weight: 700;
-    color: black;
-}
-
-.blue-box p {
-    color: black;
-    font-weight: 500;
-}
-
-.blue-box label {
-    color: black;
-    font-weight: 500;
-}
-
-.blue-box input {
-    border-radius: 5px;
-    border: 2px solid black;
-    text-align: center;
-}
+/* Generate Color Button */
 .generate-color-container {
     display: flex;
         align-items: center;
         justify-content: center;
         padding: 20px;
 }
+
 #generate-color {
     padding: 10px 20px;
     border-radius: 5px;
@@ -135,15 +121,15 @@ header {
     height: 300px;
 }
 
-/* Empty Save Palette Container */
-.empty-save-palette-container {
+/* Clear Save Palette Container */
+.clear-save-palette-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-#empty-last, #empty-all {
+#clear-last, #clear-all {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
