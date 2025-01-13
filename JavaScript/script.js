@@ -56,3 +56,21 @@ function generateAndSaveColor() {
 // Event listener for Generate Color Button
 generateColorBtn.addEventListener("click", generateAndSaveColor);
 
+// Function that saves the current colors to local storage
+function savePalette() {
+  // Create an array to hold the colors
+  const savedColors = [];
+  // Loop through the saved color elements
+  for (let i = 0; i < savedColorElements.length; i++) {
+    // Get the background color of the element
+    const color = savedColorElements[i].style.backgroundColor;
+    // If the color is not empty, add it to the array
+    if (color) {
+      savedColors.push(color);
+    }
+  }
+  // Save the array to local storage
+  localStorage.setItem("colorSwatches", JSON.stringify(savedColors));
+}
+// Event listener for Save Palette Button
+savePaletteBtn.addEventListener("click", savePalette);
