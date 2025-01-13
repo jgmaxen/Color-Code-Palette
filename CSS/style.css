@@ -116,7 +116,7 @@ header {
     height: 300px;
 }
 
-/* Empty Save Palette Container */
+/* Clear Save Palette Container */
 .clear-save-palette-container {
     display: flex;
     align-items: center;
