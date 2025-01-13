@@ -71,6 +71,21 @@ function savePalette() {
   }
   // Save the array to local storage
   localStorage.setItem("colorSwatches", JSON.stringify(savedColors));
+  alert('Palette saved!');
+  // Function to save an item with a custom name
+function saveItem() {
+    // Use prompt to get the item name from the user
+    const itemName = prompt("Please enter the name for the item:", "DefaultName");
+    if (itemName) {
+      // Proceed with saving the item using the provided name
+      console.log(`The item will be saved as: ${itemName}`);
+      // Your saving logic here...
+    } else {
+      console.log("No name provided. The item will not be saved.");
+    }
+  }
+  // Call the function to execute the prompt and save the item
+  saveItem();
 }
 // Event listener for Save Palette Button
 savePaletteBtn.addEventListener("click", savePalette);

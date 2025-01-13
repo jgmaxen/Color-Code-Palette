@@ -17,3 +17,11 @@
   } else {
     noSwatchesMessage.style.display = 'block'; // Show the "no swatches" message
   }
+  // JavaScript to save swatches to localStorage
+    const savePaletteBtn = document.getElementById('save-palette');
+    const swatches = document.querySelectorAll('.swatch-color');
+    const swatchColors = [];
+    swatches.forEach(swatch => {
+      swatchColors.push(swatch.style.backgroundColor);
+    });
+    localStorage.setItem('colorSwatches', JSON.stringify(swatchColors));
