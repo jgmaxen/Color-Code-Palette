@@ -4,21 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saved Color Swatches</title>
+  <nav>
+    <a id="back" href="index.html"> ⬅ Back</a>
+  </nav>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Montserrat", serif;
       margin: 0;
       padding: 20px;
-      background-color: #f5f5f5;
+      background-color: var(--primary);
       color: #333;
     }
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      border: medium dotted #5F9EA0;
       border-radius: 10px;
-      background-color: #fff; 
+      background-color: var(--primary); 
     }
+    :root {
+    --primary: rgb(255, 240, 220);
+    --secondary: rgb(240, 187, 120);
+    --button: rgb(84, 58, 20);
+}
     #swatches-container {
       display: flex;
       flex-wrap: wrap;
@@ -26,9 +33,9 @@
       justify-content: center;
       align-items: center;
       padding: 15px; 
-      border: 3px dashed #5F9EA0; 
+      border: 3px solid #030505; 
       border-radius: 10px;
-      background-color: #fff; 
+      background-color: var(--primary); 
       min-height: 150px; /* Ensure container has height even if empty */
     }
     .swatch {
@@ -37,7 +44,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #ccc;
+      border: 1px solid #cccccc00;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       background-color: white;

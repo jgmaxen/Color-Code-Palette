@@ -124,9 +124,6 @@ header {
     border: none;
     margin: 10px;
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
-<<<<<<< HEAD
-    align-items:right;
-=======
     align-items: right;
     background-color: white;
     height: 300px;
@@ -140,7 +137,7 @@ header {
     padding: 20px;
 }
 
-#clear-last, #clear-all {
+#empty-last, #empty-all {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -158,9 +155,4 @@ header {
 
 #clear-all {
     width: 150px;
-}
-
-/* Save Palette */
->>>>>>> 7df533dfeb1108038a796319024e3b649821dc81
-
 }
