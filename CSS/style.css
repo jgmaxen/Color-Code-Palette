@@ -109,8 +109,13 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+#generate-color:hover {
+    background-color: rgb(206, 206, 206);
 }
 
 /* Saved Colors */
@@ -144,14 +149,20 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    transition: 0.3s;
 }
 
 #save-palette {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+#empty-last:hover, #save-palette:hover, #empty-all:hover {
+    background-color: rgb(206, 206, 206);
 }
