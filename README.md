@@ -47,3 +47,9 @@ Gilmer Perez: index HTML & JavaScript
 Jonathan Maxen: localstorage HTML & JavaScript
 
 Ivy Taff: CSS & JavaScript
+
+## Links
+
+The URL of the deployed application: https://gilmerperez.github.io/Color-Code-Palette/
+
+The URL of the GitHub repository: https://github.com/gilmerperez/Color-Code-Palette
